@@ -71,7 +71,7 @@ body {
 
 .text-content .btn {
   margin-top: 60px;
-  margin-left: 376px;
+  margin-left: -77px;
   width: 160px;
   height: 50px;
   background: #ff3147 0% 0% no-repeat padding-box !important;
@@ -190,7 +190,7 @@ body {
 }
 .card-text-overlay img {
   /* UI Properties */
-  background: transparent url("img/icon.svg") 0% 0% no-repeat padding-box;
+  background: transparent 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 .card-title {
@@ -520,8 +520,7 @@ body {
   width: 1170px;
   height: 56px;
   /* UI Properties */
-  background: transparent 0% 0% no-repeat
-    padding-box;
+  background: transparent 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 .text-content {
