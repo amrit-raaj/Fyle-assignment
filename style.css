@@ -1,0 +1,551 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.artboard {
+  width: 1920px;
+  height: 4821px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the top */
+  /* background-color: lightblue; */
+}
+
+.text-content {
+  position: absolute;
+  top: 0; /* Align text content to the top */
+}
+
+.aw {
+  /* Layout Properties */
+  margin-top: 243px;
+  margin-left: 376px;
+  width: 251px;
+  height: 30px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 30px/110px "Roboto", serif;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.dma {
+  margin-top: 39px;
+  margin-left: 376px;
+  width: 614px;
+  height: 140px;
+  text-align: left;
+  font: normal normal bold 60px/80px "Roboto", serif;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.morbi {
+  margin-top: 50px;
+  margin-left: 375px;
+  width: 584px;
+  height: 83px;
+  text-align: left;
+  font: normal normal normal 16px/30px "Poppins", sans-serif;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.i {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1058px;
+  width: 487px;
+  height: 737px;
+  background: transparent url("img/hero@2x.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.text-content .btn {
+  margin-top: 60px;
+  margin-left: 376px;
+  width: 160px;
+  height: 50px;
+  background: #ff3147 0% 0% no-repeat padding-box !important;
+  border-radius: 2px;
+  opacity: 1;
+  color: #ffffff !important;
+  font: normal normal 600 14px "Poppins", sans-serif;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.text-content .btn p {
+  margin-top: 8px;
+}
+.wwd {
+  margin-top: 937px;
+  margin-left: -4px;
+  width: 1920px;
+  height: 1030px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.f {
+  /* Layout Properties */
+  margin-top: 100px;
+  margin-left: 373px;
+  width: 156px;
+  height: 24px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 24px/26px Roboto;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+
+  color: #ff3147;
+  opacity: 1;
+}
+
+.s1 {
+  /* Layout Properties */
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 373px;
+  width: 442px;
+  height: 110px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 45px/65px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.s2 {
+  /* Layout Properties */
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 960px;
+  width: 584px;
+  height: 83px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.slider {
+  margin-top: 210px;
+  margin-left: 375px;
+  display: flex;
+  overflow-y: hidden;
+  position: relative;
+  padding: 20px;
+  gap: 30px; /* Optional: adds space between cards */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 370px;
+  height: 450px !important;
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
+
+.card-overlay {
+  position: relative;
+}
+
+.card-img-top {
+  width: 370px;
+  height: 450px;
+  display: block;
+  object-fit: cover;
+}
+
+.card-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #ff3147 0% 0% no-repeat padding-box; /* Optional: add a semi-transparent background */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-text-overlay {
+  opacity: 1;
+  border-radius: 5px;
+}
+.card-text-overlay img {
+  /* UI Properties */
+  background: transparent url("img/icon.svg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.card-title {
+  margin: 10px;
+}
+.card-text {
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 46px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal normal 12px/22px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.card-text-overlay .btn {
+  margin-top: 10px !important;
+  width: 185px;
+  height: 50px;
+  display: inline-block;
+  background: #f4f4f4 0% 0% no-repeat padding-box !important;
+  color: #ff3147 !important;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.card-text-overlay .btn p {
+  margin-top: 7px;
+  font: normal normal 600 14px/26px Poppins;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.p3 {
+  margin-top: 100px;
+}
+.p31 {
+  width: 206px;
+  height: 24px;
+  margin-left: 857px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 600 24px/26px Roboto;
+  letter-spacing: 0px;
+  color: #ff3147;
+  opacity: 1;
+  text-transform: uppercase;
+}
+.p32 {
+  width: 428px;
+  height: 45px;
+  margin-left: 746px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 45px/65px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Adjusts the spacing between items */
+  align-items: center; /* Aligns items at the start of the container */
+  margin-left: 375px !important; /* Adjust this value to set the desired left margin */
+}
+.container span {
+  margin: 0 20px;
+}
+.head {
+  width: 243px;
+  height: 28px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 20px/80px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.shead {
+  width: 256px;
+  height: 75px;
+  text-align: left;
+  font: normal normal normal 14px/26px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.ar {
+  margin-top: 63px;
+  margin-bottom: 20px;
+  width: 72px;
+  height: 72px;
+  /* UI Properties */
+  background: transparent url("img/1.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.project .container .ar {
+  margin-top: 60px;
+  width: 770px;
+  height: 567px;
+  /* UI Properties */
+  background: transparent url("img/image1.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.project .container div {
+  margin-left: 15px;
+  width: 370px;
+  height: 189px;
+  /* UI Properties */
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 40px;
+  justify-content: center;
+}
+.project .container div:hover {
+  background-color: #ff3147;
+  opacity: 1;
+  transition: background-color 0.6s ease-in-out;
+}
+.highlighted {
+  background-color: #ff3147 !important;
+}
+.highlighted .head,
+.highlighted .shead {
+  color: #f4f4f4; /* Change text color to white for elements with class 'head' and 'shead' inside highlighted divs */
+}
+.project .container div:hover * {
+  color: #f4f4f4; /* Change text color to white on hover */
+  cursor: pointer;
+}
+.project .container div.x1 {
+  margin-top: 45px;
+}
+.growts {
+  margin-top: 120px;
+  margin-left: -1px;
+  width: 1920px;
+  height: 602px;
+  /* UI Properties */
+  background: #fafafa 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.growts .p31 {
+  display: inline;
+}
+.growts .p32 {
+  /* background-color: yellow; */
+  margin-left: 700px;
+  width: fit-content;
+}
+.growts .container span {
+  margin-top: 60px;
+  width: 270px;
+  height: 233px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.growts .container span:hover {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 3px 6px 20px #672c2c1f;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.gr {
+  margin-top: 34px;
+  margin-left: 115px;
+  width: 39px;
+  height: 34px;
+}
+
+.gr1 {
+  margin-top: 20px;
+  margin-left: 61px;
+  width: 148px;
+  height: 40px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 300 60px/65px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.gr2 {
+  /* Layout Properties */
+  margin-top: 10px !important;
+  margin-left: 31px;
+  width: 208px;
+  height: 28px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 300 20px/80px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.cf .p31 {
+  margin-left: 839px;
+  display: inline;
+}
+.cf .p32 {
+  margin-left: 661px;
+  width: fit-content;
+}
+.cf img {
+  /* Layout Properties */
+  margin-top: 60px;
+  margin-left: 155px;
+  width: 64px;
+  height: 45px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: absolute; /* Set the image to absolute positioning */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it at the left */
+  /* Remove any default margins */
+  /* Remove any default padding */
+}
+.cf .p33 {
+  /* Layout Properties */
+  margin-top: 76px;
+  margin-left: 190px;
+  width: 831px;
+  height: 62px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 20px/34px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  position: absolute; /* Set the paragraph to absolute positioning */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it at the left */
+  /* Remove any default margins */
+  /* Remove any default padding */
+}
+.cf .container {
+  position: relative;
+}
+.cf .container .name {
+  margin-top: 155px;
+  margin-left: -320px;
+  width: 159px;
+  height: 28px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 20px/34px Poppins;
+  letter-spacing: 0px;
+  color: #ff3147;
+  opacity: 1;
+}
+.cf .container .po {
+  margin-top: 155px;
+  width: 338px;
+  height: 28px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 300 20px/34px Poppins;
+  letter-spacing: 0px;
+  color: #808080;
+  opacity: 1;
+}
+.pd img {
+  margin-top: 100px;
+  margin-left: 0px;
+}
+.pd {
+  position: relative; /* Set the container to relative positioning */
+}
+
+.image-1 {
+  position: absolute; /* Set the first image to absolute positioning */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1920px;
+  height: 310px;
+
+  /* UI Properties */
+  background: transparent url("img/NoPath - Copy@2x.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 0.81; /* Lower z-index to be underneath the second image */
+}
+
+.image-2 {
+  position: absolute; /* Set the second image to absolute positioning */
+  top: 0; /* Adjust as needed to position the second image */
+  left: 0; /* Adjust as needed to position the second image */
+  z-index: 2; /* Higher z-index to be on top of the first image */
+  margin-top: 230px !important;
+  margin-left: 375px !important;
+  width: 1170px;
+  height: 56px;
+  /* UI Properties */
+  background: transparent url("img/Group 500@2x.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}
+.text-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: #ff3147;
+  border: none;
+}
+
+.btn-full-width {
+  width: 100%;
+}
